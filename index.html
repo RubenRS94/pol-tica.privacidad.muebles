@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de privacidad – Natura Home</title>
-  <meta name="description" content="Política de privacidad de Natura Home. Información sobre el tratamiento de tus datos personales, derechos y cómo ejercerlos." />
+  <title>Privacy policy – Natura Home</title>
+  <meta name="description" content="Natura Home privacy policy. Information on how we process your personal data, your rights and how to exercise them." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -39,13 +39,11 @@
 
     .container { width: 92%; max-width: var(--max-w); margin: 0 auto; }
 
-    /* TOP BAR */
     .top-bar { background: var(--earth); color: var(--sand); font-size: 0.71rem; font-weight: 400; letter-spacing: 0.09em; padding: 0.55rem 0; }
     .top-bar-inner { display: flex; justify-content: center; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
     .top-bar-item { display: flex; align-items: center; gap: 0.4rem; }
     .top-bar-item svg { flex-shrink: 0; opacity: 0.8; }
 
-    /* HEADER */
     .site-header { position: sticky; top: 0; z-index: 1000; background: var(--warm-white); border-bottom: 1px solid transparent; transition: border-color 0.3s, box-shadow 0.3s; }
     .site-header.scrolled { border-color: var(--sand); box-shadow: var(--shadow-sm); }
     .header-inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 1.2rem 0; gap: 1rem; }
@@ -75,7 +73,6 @@
     .mobile-overlay { display: none; position: fixed; inset: 0; background: rgba(26,22,18,0.4); z-index: 1050; backdrop-filter: blur(2px); }
     .mobile-overlay.show { display: block; }
 
-    /* BREADCRUMB */
     .breadcrumb { background: var(--cream); border-bottom: 1px solid var(--sand); padding: 0.75rem 0; }
     .breadcrumb-inner { display: flex; align-items: center; gap: 0.5rem; font-size: 0.74rem; color: var(--taupe); }
     .breadcrumb-inner a { color: var(--taupe); transition: color var(--transition); }
@@ -83,222 +80,59 @@
     .breadcrumb-inner .sep { opacity: 0.4; }
     .breadcrumb-inner .current { color: var(--charcoal); }
 
-    /* PAGE HERO */
-    .page-hero {
-      background: var(--cream);
-      padding: 4rem 0 3rem;
-      border-bottom: 1px solid var(--sand);
-    }
-    .page-hero-inner {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: end;
-      gap: 2rem;
-    }
-    .page-hero-label {
-      display: inline-block;
-      font-size: 0.68rem; font-weight: 500;
-      letter-spacing: 0.22em; text-transform: uppercase;
-      color: var(--bark); margin-bottom: 0.9rem;
-    }
-    .page-hero-title {
-      font-family: var(--font-serif);
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 300; line-height: 1.15;
-      color: var(--black);
-    }
-    .page-hero-meta {
-      text-align: right;
-      font-size: 0.78rem; color: var(--taupe); line-height: 1.7;
-    }
+    .page-hero { background: var(--cream); padding: 4rem 0 3rem; border-bottom: 1px solid var(--sand); }
+    .page-hero-inner { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; }
+    .page-hero-label { display: inline-block; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--bark); margin-bottom: 0.9rem; }
+    .page-hero-title { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 300; line-height: 1.15; color: var(--black); }
+    .page-hero-meta { text-align: right; font-size: 0.78rem; color: var(--taupe); line-height: 1.7; }
     .page-hero-meta strong { color: var(--charcoal); font-weight: 500; }
 
-    /* MAIN LAYOUT */
-    .legal-layout {
-      padding: 5rem 0 7rem;
-      background: var(--warm-white);
-      display: grid;
-      grid-template-columns: 240px 1fr;
-      gap: 5rem;
-      align-items: start;
-    }
+    .legal-layout { padding: 5rem 0 7rem; background: var(--warm-white); display: grid; grid-template-columns: 240px 1fr; gap: 5rem; align-items: start; }
 
-    /* SIDEBAR / índice */
-    .legal-nav {
-      position: sticky;
-      top: 110px;
-    }
-    .legal-nav-title {
-      font-size: 0.68rem; font-weight: 500;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--taupe); margin-bottom: 1.1rem;
-      padding-bottom: 0.7rem;
-      border-bottom: 1px solid var(--sand);
-    }
+    .legal-nav { position: sticky; top: 110px; }
+    .legal-nav-title { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--taupe); margin-bottom: 1.1rem; padding-bottom: 0.7rem; border-bottom: 1px solid var(--sand); }
     .legal-nav-list { display: flex; flex-direction: column; gap: 0; }
-    .legal-nav-list a {
-      display: block;
-      font-size: 0.82rem; color: var(--taupe);
-      padding: 0.5rem 0;
-      border-bottom: 1px solid rgba(221,211,197,0.5);
-      transition: color var(--transition), padding-left var(--transition);
-      line-height: 1.4;
-    }
+    .legal-nav-list a { display: block; font-size: 0.82rem; color: var(--taupe); padding: 0.5rem 0; border-bottom: 1px solid rgba(221,211,197,0.5); transition: color var(--transition), padding-left var(--transition); line-height: 1.4; }
     .legal-nav-list a:hover { color: var(--earth); padding-left: 0.4rem; }
     .legal-nav-list a.active { color: var(--earth); font-weight: 500; }
 
-    .legal-nav-contact {
-      margin-top: 2rem;
-      background: var(--cream);
-      border: 1px solid var(--sand);
-      border-radius: var(--radius);
-      padding: 1.2rem;
-    }
-    .legal-nav-contact-title {
-      font-size: 0.72rem; font-weight: 500;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--charcoal); margin-bottom: 0.6rem;
-    }
-    .legal-nav-contact p {
-      font-size: 0.8rem; color: var(--taupe); line-height: 1.65;
-    }
-    .legal-nav-contact a {
-      color: var(--rust-accent);
-      font-size: 0.8rem;
-      transition: color var(--transition);
-    }
+    .legal-nav-contact { margin-top: 2rem; background: var(--cream); border: 1px solid var(--sand); border-radius: var(--radius); padding: 1.2rem; }
+    .legal-nav-contact-title { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--charcoal); margin-bottom: 0.6rem; }
+    .legal-nav-contact p { font-size: 0.8rem; color: var(--taupe); line-height: 1.65; }
+    .legal-nav-contact a { color: var(--rust-accent); font-size: 0.8rem; transition: color var(--transition); }
     .legal-nav-contact a:hover { color: var(--earth); }
 
-    /* CONTENT */
-    .legal-content {}
+    .legal-section { margin-bottom: 3.5rem; padding-bottom: 3.5rem; border-bottom: 1px solid var(--sand); }
+    .legal-section:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
 
-    .legal-section {
-      margin-bottom: 3.5rem;
-      padding-bottom: 3.5rem;
-      border-bottom: 1px solid var(--sand);
-    }
-    .legal-section:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      border-bottom: none;
-    }
+    .legal-section-num { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rust-accent); margin-bottom: 0.5rem; }
+    .legal-section-title { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 300; color: var(--black); margin-bottom: 1.3rem; line-height: 1.2; }
 
-    .legal-section-num {
-      font-size: 0.68rem; font-weight: 500;
-      letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--rust-accent); margin-bottom: 0.5rem;
-    }
-    .legal-section-title {
-      font-family: var(--font-serif);
-      font-size: 1.6rem; font-weight: 300;
-      color: var(--black); margin-bottom: 1.3rem;
-      line-height: 1.2;
-    }
-
-    .legal-content p {
-      font-size: 0.9rem; color: var(--taupe);
-      line-height: 1.9; margin-bottom: 1rem;
-    }
+    .legal-content p { font-size: 0.9rem; color: var(--taupe); line-height: 1.9; margin-bottom: 1rem; }
     .legal-content p:last-child { margin-bottom: 0; }
-
-    .legal-content strong {
-      color: var(--charcoal); font-weight: 500;
-    }
-
-    .legal-content a {
-      color: var(--rust-accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      transition: color var(--transition);
-    }
+    .legal-content strong { color: var(--charcoal); font-weight: 500; }
+    .legal-content a { color: var(--rust-accent); text-decoration: underline; text-underline-offset: 3px; transition: color var(--transition); }
     .legal-content a:hover { color: var(--earth); }
 
-    /* Tabla de datos tratados */
-    .data-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1.4rem 0;
-      font-size: 0.84rem;
-    }
-    .data-table th {
-      background: var(--cream);
-      font-size: 0.68rem; font-weight: 500;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--charcoal);
-      padding: 0.85rem 1rem;
-      text-align: left;
-      border-bottom: 2px solid var(--sand);
-    }
-    .data-table td {
-      padding: 0.85rem 1rem;
-      color: var(--taupe);
-      border-bottom: 1px solid var(--sand);
-      vertical-align: top;
-      line-height: 1.6;
-    }
+    .data-table { width: 100%; border-collapse: collapse; margin: 1.4rem 0; font-size: 0.84rem; }
+    .data-table th { background: var(--cream); font-size: 0.68rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--charcoal); padding: 0.85rem 1rem; text-align: left; border-bottom: 2px solid var(--sand); }
+    .data-table td { padding: 0.85rem 1rem; color: var(--taupe); border-bottom: 1px solid var(--sand); vertical-align: top; line-height: 1.6; }
     .data-table tr:last-child td { border-bottom: none; }
     .data-table tr:hover td { background: var(--cream); }
 
-    /* Lista de derechos */
-    .rights-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin: 1.4rem 0;
-    }
-    .right-card {
-      background: var(--cream);
-      border: 1px solid var(--sand);
-      border-radius: var(--radius);
-      padding: 1.2rem 1.3rem;
-    }
-    .right-card-title {
-      font-size: 0.8rem; font-weight: 500;
-      color: var(--black); margin-bottom: 0.35rem;
-      display: flex; align-items: center; gap: 0.5rem;
-    }
-    .right-card-title::before {
-      content: '';
-      display: block; width: 6px; height: 6px;
-      border-radius: 50%; background: var(--rust-accent);
-      flex-shrink: 0;
-    }
-    .right-card p {
-      font-size: 0.8rem !important;
-      margin-bottom: 0 !important;
-    }
+    .rights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.4rem 0; }
+    .right-card { background: var(--cream); border: 1px solid var(--sand); border-radius: var(--radius); padding: 1.2rem 1.3rem; }
+    .right-card-title { font-size: 0.8rem; font-weight: 500; color: var(--black); margin-bottom: 0.35rem; display: flex; align-items: center; gap: 0.5rem; }
+    .right-card-title::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--rust-accent); flex-shrink: 0; }
+    .right-card p { font-size: 0.8rem !important; margin-bottom: 0 !important; }
 
-    /* Lista con bullets elegantes */
-    .legal-list {
-      margin: 1rem 0 1rem 0;
-      display: flex; flex-direction: column; gap: 0.5rem;
-    }
-    .legal-list li {
-      display: flex; align-items: flex-start; gap: 0.7rem;
-      font-size: 0.9rem; color: var(--taupe); line-height: 1.7;
-    }
-    .legal-list li::before {
-      content: '';
-      display: block; width: 5px; height: 5px;
-      border-radius: 50%; background: var(--rust-accent);
-      flex-shrink: 0; margin-top: 8px;
-    }
+    .legal-list { margin: 1rem 0; display: flex; flex-direction: column; gap: 0.5rem; }
+    .legal-list li { display: flex; align-items: flex-start; gap: 0.7rem; font-size: 0.9rem; color: var(--taupe); line-height: 1.7; }
+    .legal-list li::before { content: ''; display: block; width: 5px; height: 5px; border-radius: 50%; background: var(--rust-accent); flex-shrink: 0; margin-top: 8px; }
 
-    /* Info box */
-    .info-box {
-      background: var(--cream);
-      border-left: 3px solid var(--rust-accent);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      padding: 1.1rem 1.4rem;
-      margin: 1.4rem 0;
-    }
-    .info-box p {
-      font-size: 0.86rem !important;
-      color: var(--charcoal) !important;
-      margin-bottom: 0 !important;
-    }
+    .info-box { background: var(--cream); border-left: 3px solid var(--rust-accent); border-radius: 0 var(--radius) var(--radius) 0; padding: 1.1rem 1.4rem; margin: 1.4rem 0; }
+    .info-box p { font-size: 0.86rem !important; color: var(--charcoal) !important; margin-bottom: 0 !important; }
 
-    /* FOOTER */
     .site-footer { background: var(--charcoal); color: var(--taupe); padding: 5rem 0 0; }
     .footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1.2fr; gap: 2.5rem; padding-bottom: 3.5rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
     .footer-brand .logo-name { color: var(--sand); }
@@ -315,7 +149,6 @@
     .footer-contact-item svg { flex-shrink: 0; margin-top: 2px; }
     .footer-bottom { padding: 1.4rem 0; display: flex; align-items: center; justify-content: space-between; font-size: 0.74rem; color: rgba(181,168,152,0.5); flex-wrap: wrap; gap: 0.5rem; }
 
-    /* RESPONSIVE */
     @media (max-width: 900px) {
       .header-inner { grid-template-columns: 1fr auto; }
       .main-nav { display: none; }
@@ -343,15 +176,15 @@
       <div class="top-bar-inner">
         <span class="top-bar-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          Envío gratuito en pedidos desde 199€
+          Free shipping on orders over €199
         </span>
         <span class="top-bar-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Pago 100% seguro
+          100% secure payment
         </span>
         <span class="top-bar-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          Atención personalizada · Lun–Vie 9h–19h
+          Personal support · Mon–Fri 9am–7pm
         </span>
       </div>
     </div>
@@ -363,27 +196,27 @@
       <div class="header-inner">
         <a href="index.html" class="logo">
           <span class="logo-name">Natura Home</span>
-          <span class="logo-tagline">Muebles con alma</span>
+          <span class="logo-tagline">Furniture with soul</span>
         </a>
-        <nav class="main-nav" aria-label="Navegación principal">
-          <a href="index.html">Inicio</a>
-          <a href="hogar.html">Hogar</a>
-          <a href="bano.html">Baño</a>
-          <a href="terraza-jardin.html">Terraza y jardín</a>
-          <a href="contacto.html">Contacto</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="hogar.html">Living</a>
+          <a href="bano.html">Bathroom</a>
+          <a href="terraza-jardin.html">Terrace &amp; Garden</a>
+          <a href="contacto.html">Contact</a>
         </nav>
         <div class="header-actions">
-          <button class="header-icon-btn" aria-label="Buscar">
+          <button class="header-icon-btn" aria-label="Search">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
           </button>
-          <button class="header-icon-btn" aria-label="Favoritos">
+          <button class="header-icon-btn" aria-label="Wishlist">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </button>
-          <a href="carrito.html" class="header-icon-btn" aria-label="Carrito">
+          <a href="carrito.html" class="header-icon-btn" aria-label="Cart">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             <span class="cart-count" id="cartCount">0</span>
           </a>
-          <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false">
+          <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
         </div>
@@ -395,11 +228,11 @@
   <nav class="mobile-nav" id="mobileNav">
     <button class="mobile-nav-close" id="mobileNavClose">✕</button>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="hogar.html">Hogar</a></li>
-      <li><a href="bano.html">Baño</a></li>
-      <li><a href="terraza-jardin.html">Terraza y jardín</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="hogar.html">Living</a></li>
+      <li><a href="bano.html">Bathroom</a></li>
+      <li><a href="terraza-jardin.html">Terrace &amp; Garden</a></li>
+      <li><a href="contacto.html">Contact</a></li>
     </ul>
   </nav>
 
@@ -409,9 +242,9 @@
     <div class="breadcrumb">
       <div class="container">
         <div class="breadcrumb-inner">
-          <a href="index.html">Inicio</a>
+          <a href="index.html">Home</a>
           <span class="sep">›</span>
-          <span class="current">Política de privacidad</span>
+          <span class="current">Privacy policy</span>
         </div>
       </div>
     </div>
@@ -421,13 +254,13 @@
       <div class="container">
         <div class="page-hero-inner">
           <div>
-            <span class="page-hero-label">Información legal</span>
-            <h1 class="page-hero-title">Política de privacidad</h1>
+            <span class="page-hero-label">Legal information</span>
+            <h1 class="page-hero-title">Privacy policy</h1>
           </div>
           <div class="page-hero-meta">
-            <p><strong>Última actualización</strong></p>
-            <p>1 de enero de 2025</p>
-            <p style="margin-top:0.3rem">Versión 1.0</p>
+            <p><strong>Last updated</strong></p>
+            <p>1 January 2025</p>
+            <p style="margin-top:0.3rem">Version 1.0</p>
           </div>
         </div>
       </div>
@@ -437,304 +270,304 @@
     <div class="container">
       <div class="legal-layout">
 
-        <!-- ÍNDICE LATERAL -->
-        <aside class="legal-nav" aria-label="Índice de contenidos">
-          <p class="legal-nav-title">Contenido</p>
+        <!-- SIDEBAR INDEX -->
+        <aside class="legal-nav" aria-label="Table of contents">
+          <p class="legal-nav-title">Contents</p>
           <nav class="legal-nav-list">
-            <a href="#responsable">1. Responsable del tratamiento</a>
-            <a href="#datos-recogidos">2. Datos que recogemos</a>
-            <a href="#finalidades">3. Finalidades y base legal</a>
-            <a href="#conservacion">4. Conservación de datos</a>
-            <a href="#destinatarios">5. Destinatarios y cesiones</a>
-            <a href="#transferencias">6. Transferencias internacionales</a>
-            <a href="#derechos">7. Tus derechos</a>
+            <a href="#responsable">1. Data controller</a>
+            <a href="#datos-recogidos">2. Data we collect</a>
+            <a href="#finalidades">3. Purposes and legal basis</a>
+            <a href="#conservacion">4. Data retention</a>
+            <a href="#destinatarios">5. Recipients and disclosures</a>
+            <a href="#transferencias">6. International transfers</a>
+            <a href="#derechos">7. Your rights</a>
             <a href="#cookies">8. Cookies</a>
-            <a href="#menores">9. Menores de edad</a>
-            <a href="#seguridad">10. Seguridad</a>
-            <a href="#cambios">11. Cambios en esta política</a>
-            <a href="#contacto-dpo">12. Contacto y DPO</a>
+            <a href="#menores">9. Minors</a>
+            <a href="#seguridad">10. Security</a>
+            <a href="#cambios">11. Changes to this policy</a>
+            <a href="#contacto-dpo">12. Contact &amp; DPO</a>
           </nav>
 
           <div class="legal-nav-contact">
-            <p class="legal-nav-contact-title">¿Tienes dudas?</p>
-            <p>Escríbenos a<br>
-              <a href="mailto:privacidad@naturahome.es">privacidad@naturahome.es</a>
+            <p class="legal-nav-contact-title">Have a question?</p>
+            <p>Write to us at<br>
+              <a href="mailto:privacy@naturahome.es">privacy@naturahome.es</a>
             </p>
           </div>
         </aside>
 
-        <!-- TEXTO LEGAL -->
+        <!-- LEGAL TEXT -->
         <article class="legal-content">
 
           <div class="info-box">
-            <p>En Natura Home nos tomamos muy en serio la protección de tu privacidad. Esta política explica qué datos personales recogemos, con qué finalidad los tratamos y qué derechos tienes sobre ellos, de acuerdo con el <strong>Reglamento (UE) 2016/679 (RGPD)</strong> y la <strong>Ley Orgánica 3/2018 de Protección de Datos Personales (LOPDGDD)</strong>.</p>
+            <p>At Natura Home we take the protection of your privacy very seriously. This policy explains what personal data we collect, why we process it and what rights you have over it, in accordance with <strong>Regulation (EU) 2016/679 (GDPR)</strong> and applicable national data protection law.</p>
           </div>
 
           <!-- 1 -->
           <div class="legal-section" id="responsable">
             <p class="legal-section-num">01</p>
-            <h2 class="legal-section-title">Responsable del tratamiento</h2>
-            <p>El responsable del tratamiento de tus datos personales es:</p>
+            <h2 class="legal-section-title">Data controller</h2>
+            <p>The controller responsible for processing your personal data is:</p>
             <ul class="legal-list">
-              <li><strong>Denominación social:</strong> Natura Home, S.L.</li>
-              <li><strong>NIF:</strong> B-XXXXXXXX</li>
-              <li><strong>Domicilio social:</strong> Calle del Pinar 14, 28006 Madrid, España</li>
-              <li><strong>Correo electrónico:</strong> <a href="mailto:privacidad@naturahome.es">privacidad@naturahome.es</a></li>
-              <li><strong>Teléfono:</strong> +34 900 123 456</li>
-              <li><strong>Sitio web:</strong> www.naturahome.es</li>
+              <li><strong>Company name:</strong> Natura Home, S.L.</li>
+              <li><strong>Tax ID:</strong> B-XXXXXXXX</li>
+              <li><strong>Registered address:</strong> Calle del Pinar 14, 28006 Madrid, Spain</li>
+              <li><strong>Email:</strong> <a href="mailto:privacy@naturahome.es">privacy@naturahome.es</a></li>
+              <li><strong>Phone:</strong> +34 900 123 456</li>
+              <li><strong>Website:</strong> www.naturahome.es</li>
             </ul>
           </div>
 
           <!-- 2 -->
           <div class="legal-section" id="datos-recogidos">
             <p class="legal-section-num">02</p>
-            <h2 class="legal-section-title">Datos que recogemos</h2>
-            <p>En función de la interacción que tengas con nuestra web y tienda, podemos recoger las siguientes categorías de datos:</p>
+            <h2 class="legal-section-title">Data we collect</h2>
+            <p>Depending on how you interact with our website and shop, we may collect the following categories of data:</p>
 
             <table class="data-table">
               <thead>
                 <tr>
-                  <th>Categoría</th>
-                  <th>Datos concretos</th>
-                  <th>Cómo los obtenemos</th>
+                  <th>Category</th>
+                  <th>Specific data</th>
+                  <th>How we obtain it</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>Identificación</strong></td>
-                  <td>Nombre, apellidos, dirección postal</td>
-                  <td>Formulario de compra o registro</td>
+                  <td><strong>Identity</strong></td>
+                  <td>First name, last name, postal address</td>
+                  <td>Purchase or registration form</td>
                 </tr>
                 <tr>
-                  <td><strong>Contacto</strong></td>
-                  <td>Email, teléfono</td>
-                  <td>Formularios web, cuenta de usuario</td>
+                  <td><strong>Contact</strong></td>
+                  <td>Email address, phone number</td>
+                  <td>Web forms, user account</td>
                 </tr>
                 <tr>
-                  <td><strong>Pago</strong></td>
-                  <td>Datos de tarjeta (gestionados por pasarela externa, no almacenados por nosotros)</td>
-                  <td>Proceso de compra</td>
+                  <td><strong>Payment</strong></td>
+                  <td>Card details (processed by a third-party payment gateway — not stored by us)</td>
+                  <td>Checkout process</td>
                 </tr>
                 <tr>
-                  <td><strong>Navegación</strong></td>
-                  <td>Dirección IP, navegador, páginas visitadas, tiempo de sesión</td>
-                  <td>Cookies y tecnologías similares</td>
+                  <td><strong>Browsing</strong></td>
+                  <td>IP address, browser type, pages visited, session duration</td>
+                  <td>Cookies and similar technologies</td>
                 </tr>
                 <tr>
-                  <td><strong>Comercial</strong></td>
-                  <td>Historial de pedidos, lista de deseos, preferencias</td>
-                  <td>Uso de la tienda</td>
+                  <td><strong>Commercial</strong></td>
+                  <td>Order history, wishlist, preferences</td>
+                  <td>Use of the shop</td>
                 </tr>
                 <tr>
-                  <td><strong>Comunicación</strong></td>
-                  <td>Contenido de mensajes enviados a través del formulario de contacto</td>
-                  <td>Formulario de contacto</td>
+                  <td><strong>Communications</strong></td>
+                  <td>Content of messages sent via the contact form</td>
+                  <td>Contact form</td>
                 </tr>
               </tbody>
             </table>
 
-            <p>No recogemos categorías especiales de datos (datos de salud, origen étnico, ideología, etc.).</p>
+            <p>We do not collect special categories of data (health data, ethnic origin, political views, etc.).</p>
           </div>
 
           <!-- 3 -->
           <div class="legal-section" id="finalidades">
             <p class="legal-section-num">03</p>
-            <h2 class="legal-section-title">Finalidades del tratamiento y base legal</h2>
-            <p>Tratamos tus datos con las siguientes finalidades y bases legales:</p>
+            <h2 class="legal-section-title">Purposes and legal basis</h2>
+            <p>We process your data for the following purposes and on the following legal grounds:</p>
 
             <table class="data-table">
               <thead>
                 <tr>
-                  <th>Finalidad</th>
-                  <th>Base legal</th>
+                  <th>Purpose</th>
+                  <th>Legal basis</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>Gestión de pedidos y entrega</strong> — procesar tu compra, gestionar el envío y la facturación</td>
-                  <td>Ejecución del contrato (art. 6.1.b RGPD)</td>
+                  <td><strong>Order management and delivery</strong> — processing your purchase, managing shipping and invoicing</td>
+                  <td>Performance of a contract (Art. 6(1)(b) GDPR)</td>
                 </tr>
                 <tr>
-                  <td><strong>Gestión de la cuenta de usuario</strong> — crear y mantener tu perfil en la tienda</td>
-                  <td>Ejecución del contrato (art. 6.1.b RGPD)</td>
+                  <td><strong>User account management</strong> — creating and maintaining your profile in the shop</td>
+                  <td>Performance of a contract (Art. 6(1)(b) GDPR)</td>
                 </tr>
                 <tr>
-                  <td><strong>Atención al cliente</strong> — responder a tus consultas, gestionar devoluciones e incidencias</td>
-                  <td>Ejecución del contrato / interés legítimo (art. 6.1.b y 6.1.f RGPD)</td>
+                  <td><strong>Customer service</strong> — responding to enquiries, handling returns and complaints</td>
+                  <td>Performance of a contract / legitimate interests (Art. 6(1)(b) and 6(1)(f) GDPR)</td>
                 </tr>
                 <tr>
-                  <td><strong>Obligaciones legales y fiscales</strong> — conservar facturas y registros requeridos por la normativa</td>
-                  <td>Obligación legal (art. 6.1.c RGPD)</td>
+                  <td><strong>Legal and tax obligations</strong> — retaining invoices and records required by law</td>
+                  <td>Legal obligation (Art. 6(1)(c) GDPR)</td>
                 </tr>
                 <tr>
-                  <td><strong>Newsletter y comunicaciones comerciales</strong> — enviarte novedades, ofertas y contenido relevante si te suscribes</td>
-                  <td>Consentimiento (art. 6.1.a RGPD)</td>
+                  <td><strong>Newsletter and marketing communications</strong> — sending you news, offers and relevant content if you subscribe</td>
+                  <td>Consent (Art. 6(1)(a) GDPR)</td>
                 </tr>
                 <tr>
-                  <td><strong>Análisis web y mejora del servicio</strong> — entender cómo se usa la web para mejorarla</td>
-                  <td>Interés legítimo (art. 6.1.f RGPD)</td>
+                  <td><strong>Web analytics and service improvement</strong> — understanding how the site is used in order to improve it</td>
+                  <td>Legitimate interests (Art. 6(1)(f) GDPR)</td>
                 </tr>
                 <tr>
-                  <td><strong>Prevención del fraude</strong> — detectar y prevenir actividades fraudulentas</td>
-                  <td>Interés legítimo (art. 6.1.f RGPD)</td>
+                  <td><strong>Fraud prevention</strong> — detecting and preventing fraudulent activity</td>
+                  <td>Legitimate interests (Art. 6(1)(f) GDPR)</td>
                 </tr>
               </tbody>
             </table>
 
-            <p>Cuando el tratamiento se base en tu <strong>consentimiento</strong>, tienes derecho a retirarlo en cualquier momento sin que ello afecte a la licitud del tratamiento previo.</p>
+            <p>Where processing is based on your <strong>consent</strong>, you have the right to withdraw it at any time without affecting the lawfulness of processing carried out before withdrawal.</p>
           </div>
 
           <!-- 4 -->
           <div class="legal-section" id="conservacion">
             <p class="legal-section-num">04</p>
-            <h2 class="legal-section-title">Conservación de los datos</h2>
-            <p>Conservamos tus datos durante el tiempo estrictamente necesario para la finalidad para la que fueron recogidos y para el cumplimiento de las obligaciones legales aplicables:</p>
+            <h2 class="legal-section-title">Data retention</h2>
+            <p>We retain your data only for as long as is strictly necessary for the purpose for which it was collected and to comply with applicable legal obligations:</p>
             <ul class="legal-list">
-              <li><strong>Datos de clientes y pedidos:</strong> 5 años desde la última transacción, por exigencias fiscales y mercantiles.</li>
-              <li><strong>Datos de newsletter:</strong> hasta que te des de baja o retires tu consentimiento.</li>
-              <li><strong>Datos de contacto (formulario):</strong> 1 año desde la resolución de la consulta.</li>
-              <li><strong>Datos de navegación (cookies analíticas):</strong> máximo 13 meses.</li>
-              <li><strong>Cuentas de usuario inactivas:</strong> 3 años desde la última actividad.</li>
+              <li><strong>Customer and order data:</strong> 5 years from the last transaction, as required by tax and commercial law.</li>
+              <li><strong>Newsletter data:</strong> until you unsubscribe or withdraw your consent.</li>
+              <li><strong>Contact form data:</strong> 1 year from resolution of the enquiry.</li>
+              <li><strong>Browsing data (analytics cookies):</strong> maximum 13 months.</li>
+              <li><strong>Inactive user accounts:</strong> 3 years from the last activity.</li>
             </ul>
-            <p>Transcurridos estos plazos, los datos serán eliminados o anonimizados de forma segura.</p>
+            <p>Once these periods expire, your data will be securely deleted or anonymised.</p>
           </div>
 
           <!-- 5 -->
           <div class="legal-section" id="destinatarios">
             <p class="legal-section-num">05</p>
-            <h2 class="legal-section-title">Destinatarios y cesiones</h2>
-            <p>No vendemos ni cedemos tus datos personales a terceros con fines comerciales propios. Sin embargo, para poder prestarte el servicio, compartimos datos con los siguientes tipos de proveedores de confianza que actúan como <strong>encargados del tratamiento</strong>:</p>
+            <h2 class="legal-section-title">Recipients and disclosures</h2>
+            <p>We do not sell or transfer your personal data to third parties for their own commercial purposes. However, in order to provide our service, we share data with the following trusted providers acting as <strong>data processors</strong>:</p>
             <ul class="legal-list">
-              <li><strong>Empresas de transporte y logística</strong> — para gestionar la entrega de pedidos (nombre, dirección, teléfono).</li>
-              <li><strong>Pasarela de pago</strong> — para procesar los pagos de forma segura (datos de tarjeta gestionados íntegramente por ellos con estándar PCI-DSS).</li>
-              <li><strong>Proveedores de correo electrónico y CRM</strong> — para envío de confirmaciones de pedido y newsletters.</li>
-              <li><strong>Plataforma de análisis web</strong> — para estadísticas de uso anónimas o seudonimizadas.</li>
-              <li><strong>Servicios de alojamiento web</strong> — infraestructura técnica donde opera la tienda.</li>
+              <li><strong>Shipping and logistics companies</strong> — to manage order delivery (name, address, phone number).</li>
+              <li><strong>Payment gateway</strong> — to process payments securely (card data handled entirely by them under PCI-DSS standards).</li>
+              <li><strong>Email and CRM providers</strong> — to send order confirmations and newsletters.</li>
+              <li><strong>Web analytics platform</strong> — for anonymous or pseudonymised usage statistics.</li>
+              <li><strong>Web hosting services</strong> — technical infrastructure on which the shop operates.</li>
             </ul>
-            <p>Todos nuestros proveedores están vinculados por contratos de encargo del tratamiento que garantizan el cumplimiento del RGPD. También podemos facilitar datos a <strong>autoridades públicas</strong> cuando estemos obligados por ley.</p>
+            <p>All our providers are bound by data processing agreements that ensure GDPR compliance. We may also share data with <strong>public authorities</strong> when required to do so by law.</p>
           </div>
 
           <!-- 6 -->
           <div class="legal-section" id="transferencias">
             <p class="legal-section-num">06</p>
-            <h2 class="legal-section-title">Transferencias internacionales</h2>
-            <p>Con carácter general, tus datos se tratan dentro del <strong>Espacio Económico Europeo (EEE)</strong>. En los casos excepcionales en que sea necesario transferir datos a países fuera del EEE, nos aseguramos de que existan garantías adecuadas mediante:</p>
+            <h2 class="legal-section-title">International transfers</h2>
+            <p>As a general rule, your data is processed within the <strong>European Economic Area (EEA)</strong>. In the exceptional cases where it is necessary to transfer data to countries outside the EEA, we ensure that adequate safeguards are in place through:</p>
             <ul class="legal-list">
-              <li>Decisiones de adecuación de la Comisión Europea.</li>
-              <li>Cláusulas contractuales tipo aprobadas por la Comisión Europea.</li>
-              <li>Otros mecanismos reconocidos por el RGPD (art. 46).</li>
+              <li>Adequacy decisions by the European Commission.</li>
+              <li>Standard contractual clauses approved by the European Commission.</li>
+              <li>Other mechanisms recognised under the GDPR (Art. 46).</li>
             </ul>
-            <p>Puedes solicitar información sobre las garantías aplicables escribiéndonos a <a href="mailto:privacidad@naturahome.es">privacidad@naturahome.es</a>.</p>
+            <p>You can request information about the applicable safeguards by writing to us at <a href="mailto:privacy@naturahome.es">privacy@naturahome.es</a>.</p>
           </div>
 
           <!-- 7 -->
           <div class="legal-section" id="derechos">
             <p class="legal-section-num">07</p>
-            <h2 class="legal-section-title">Tus derechos</h2>
-            <p>Como interesado, tienes los siguientes derechos reconocidos por el RGPD:</p>
+            <h2 class="legal-section-title">Your rights</h2>
+            <p>As a data subject, you have the following rights under the GDPR:</p>
 
             <div class="rights-grid">
               <div class="right-card">
-                <p class="right-card-title">Acceso</p>
-                <p>Obtener confirmación sobre si tratamos tus datos y acceder a ellos.</p>
+                <p class="right-card-title">Access</p>
+                <p>Obtain confirmation as to whether we process your data and access a copy of it.</p>
               </div>
               <div class="right-card">
-                <p class="right-card-title">Rectificación</p>
-                <p>Corregir datos inexactos o incompletos que te conciernan.</p>
+                <p class="right-card-title">Rectification</p>
+                <p>Correct inaccurate or incomplete personal data relating to you.</p>
               </div>
               <div class="right-card">
-                <p class="right-card-title">Supresión</p>
-                <p>Solicitar la eliminación de tus datos cuando ya no sean necesarios o retires el consentimiento.</p>
+                <p class="right-card-title">Erasure</p>
+                <p>Request deletion of your data when it is no longer necessary or you withdraw consent.</p>
               </div>
               <div class="right-card">
-                <p class="right-card-title">Oposición</p>
-                <p>Oponerte al tratamiento basado en interés legítimo o con fines de marketing directo.</p>
+                <p class="right-card-title">Objection</p>
+                <p>Object to processing based on legitimate interests or carried out for direct marketing purposes.</p>
               </div>
               <div class="right-card">
-                <p class="right-card-title">Limitación</p>
-                <p>Solicitar que limitemos el tratamiento en determinadas circunstancias previstas por la ley.</p>
+                <p class="right-card-title">Restriction</p>
+                <p>Request that we restrict processing in certain circumstances provided for by law.</p>
               </div>
               <div class="right-card">
-                <p class="right-card-title">Portabilidad</p>
-                <p>Recibir tus datos en formato estructurado y legible por máquina para trasladarlos a otro proveedor.</p>
+                <p class="right-card-title">Portability</p>
+                <p>Receive your data in a structured, machine-readable format to transfer it to another provider.</p>
               </div>
               <div class="right-card">
-                <p class="right-card-title">Retirada del consentimiento</p>
-                <p>Revocar el consentimiento dado en cualquier momento, sin efectos retroactivos.</p>
+                <p class="right-card-title">Withdrawal of consent</p>
+                <p>Revoke any consent given at any time, without retroactive effect.</p>
               </div>
               <div class="right-card">
-                <p class="right-card-title">Reclamación ante la AEPD</p>
-                <p>Presentar una reclamación ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>) si consideras que vulneramos tus derechos.</p>
+                <p class="right-card-title">Complaint to the supervisory authority</p>
+                <p>Lodge a complaint with the competent data protection authority if you believe we have infringed your rights.</p>
               </div>
             </div>
 
-            <p>Para ejercer cualquiera de estos derechos, envíanos un correo a <a href="mailto:privacidad@naturahome.es">privacidad@naturahome.es</a> o una carta a nuestra dirección postal, indicando tu nombre, apellidos, una copia de tu documento de identidad y el derecho que deseas ejercer. Responderemos en el plazo máximo de <strong>30 días</strong>.</p>
+            <p>To exercise any of these rights, please send an email to <a href="mailto:privacy@naturahome.es">privacy@naturahome.es</a> or a letter to our postal address, stating your full name, a copy of your identity document and the right you wish to exercise. We will respond within a maximum of <strong>30 days</strong>.</p>
           </div>
 
           <!-- 8 -->
           <div class="legal-section" id="cookies">
             <p class="legal-section-num">08</p>
             <h2 class="legal-section-title">Cookies</h2>
-            <p>Nuestra web utiliza cookies y tecnologías similares. Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas nuestro sitio. Utilizamos los siguientes tipos:</p>
+            <p>Our website uses cookies and similar technologies. Cookies are small text files stored on your device when you visit our site. We use the following types:</p>
             <ul class="legal-list">
-              <li><strong>Cookies estrictamente necesarias:</strong> imprescindibles para el funcionamiento de la tienda (carrito de compra, sesión de usuario). No requieren consentimiento.</li>
-              <li><strong>Cookies de preferencias:</strong> recuerdan tus ajustes (idioma, región). Requieren consentimiento.</li>
-              <li><strong>Cookies analíticas:</strong> nos permiten entender cómo usas la web para mejorarla (páginas visitadas, duración de la sesión). Requieren consentimiento.</li>
-              <li><strong>Cookies de marketing:</strong> utilizadas para mostrarte publicidad relevante en otros sitios. Requieren consentimiento.</li>
+              <li><strong>Strictly necessary cookies:</strong> essential for the shop to function (shopping cart, user session). No consent required.</li>
+              <li><strong>Preference cookies:</strong> remember your settings (language, region). Consent required.</li>
+              <li><strong>Analytics cookies:</strong> help us understand how you use the site so we can improve it (pages visited, session duration). Consent required.</li>
+              <li><strong>Marketing cookies:</strong> used to show you relevant advertising on other sites. Consent required.</li>
             </ul>
-            <p>Puedes gestionar o retirar tu consentimiento a cookies en cualquier momento a través del <strong>panel de preferencias de cookies</strong> disponible en la parte inferior de la web, o configurando tu navegador para bloquearlas. Ten en cuenta que desactivar algunas cookies puede afectar al funcionamiento de la tienda.</p>
-            <p>Para más información, consulta nuestra <a href="politica-cookies.html">Política de cookies</a>.</p>
+            <p>You can manage or withdraw your cookie consent at any time through the <strong>cookie preferences panel</strong> available at the bottom of the website, or by configuring your browser to block them. Please note that disabling some cookies may affect the functioning of the shop.</p>
+            <p>For more information, please see our <a href="politica-cookies.html">Cookie policy</a>.</p>
           </div>
 
           <!-- 9 -->
           <div class="legal-section" id="menores">
             <p class="legal-section-num">09</p>
-            <h2 class="legal-section-title">Menores de edad</h2>
-            <p>Los servicios de Natura Home están dirigidos a personas <strong>mayores de 16 años</strong>. No recogemos conscientemente datos de menores de esa edad. Si eres menor de 16 años, necesitas el consentimiento de tu padre, madre o tutor legal para registrarte o realizar una compra.</p>
-            <p>Si tenemos conocimiento de que hemos recogido datos de un menor sin el consentimiento parental exigible, procederemos a eliminarlos inmediatamente. Si tienes constancia de esta situación, comunícanoslo en <a href="mailto:privacidad@naturahome.es">privacidad@naturahome.es</a>.</p>
+            <h2 class="legal-section-title">Minors</h2>
+            <p>Natura Home's services are intended for persons <strong>aged 16 or over</strong>. We do not knowingly collect data from anyone under that age. If you are under 16, you need the consent of your parent or legal guardian to register or make a purchase.</p>
+            <p>If we become aware that we have collected data from a minor without the required parental consent, we will delete it immediately. If you are aware of such a situation, please notify us at <a href="mailto:privacy@naturahome.es">privacy@naturahome.es</a>.</p>
           </div>
 
           <!-- 10 -->
           <div class="legal-section" id="seguridad">
             <p class="legal-section-num">10</p>
-            <h2 class="legal-section-title">Seguridad de los datos</h2>
-            <p>Aplicamos medidas técnicas y organizativas apropiadas para proteger tus datos personales frente a acceso no autorizado, pérdida, destrucción o alteración. Entre otras medidas:</p>
+            <h2 class="legal-section-title">Data security</h2>
+            <p>We apply appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, destruction or alteration. These include, among others:</p>
             <ul class="legal-list">
-              <li>Comunicaciones cifradas mediante <strong>protocolo HTTPS/TLS</strong>.</li>
-              <li>Acceso restringido a los datos solo al personal autorizado con necesidad operativa.</li>
-              <li>Pasarela de pagos certificada con estándar <strong>PCI-DSS</strong>; no almacenamos datos de tarjeta en nuestros servidores.</li>
-              <li>Revisiones periódicas de seguridad y actualizaciones de sistemas.</li>
-              <li>Planes de respuesta ante incidentes y notificación a la AEPD en caso de brecha de seguridad cuando así lo exija la normativa.</li>
+              <li>Encrypted communications via <strong>HTTPS/TLS protocol</strong>.</li>
+              <li>Access to data restricted to authorised personnel with an operational need.</li>
+              <li>Payment gateway certified to <strong>PCI-DSS</strong> standard — we do not store card data on our servers.</li>
+              <li>Regular security reviews and system updates.</li>
+              <li>Incident response plans and notification to the supervisory authority in the event of a data breach where required by law.</li>
             </ul>
-            <p>No obstante, ninguna transmisión de datos por Internet es completamente segura. Si sospechas de un uso indebido de tus datos, contáctanos de inmediato.</p>
+            <p>However, no transmission of data over the Internet is completely secure. If you suspect misuse of your data, please contact us immediately.</p>
           </div>
 
           <!-- 11 -->
           <div class="legal-section" id="cambios">
             <p class="legal-section-num">11</p>
-            <h2 class="legal-section-title">Cambios en esta política</h2>
-            <p>Podemos actualizar esta política de privacidad para adaptarla a cambios normativos, jurisprudenciales o de nuestras prácticas internas. Cuando realicemos cambios relevantes, te informaremos mediante:</p>
+            <h2 class="legal-section-title">Changes to this policy</h2>
+            <p>We may update this privacy policy to reflect changes in legislation, case law or our internal practices. When we make significant changes, we will notify you via:</p>
             <ul class="legal-list">
-              <li>Un aviso destacado en la web antes de que los cambios entren en vigor.</li>
-              <li>Un correo electrónico si eres cliente registrado o suscriptor de la newsletter.</li>
+              <li>A prominent notice on the website before the changes take effect.</li>
+              <li>An email if you are a registered customer or newsletter subscriber.</li>
             </ul>
-            <p>La fecha de «última actualización» que figura en la cabecera de este documento refleja siempre la versión vigente. Te recomendamos revisar esta política periódicamente.</p>
+            <p>The "last updated" date shown at the top of this document always reflects the current version. We recommend reviewing this policy periodically.</p>
           </div>
 
           <!-- 12 -->
           <div class="legal-section" id="contacto-dpo">
             <p class="legal-section-num">12</p>
-            <h2 class="legal-section-title">Contacto y Delegado de Protección de Datos</h2>
-            <p>Para cualquier consulta, solicitud o reclamación relacionada con el tratamiento de tus datos personales, puedes dirigirte a nosotros por cualquiera de los siguientes medios:</p>
+            <h2 class="legal-section-title">Contact &amp; Data Protection Officer</h2>
+            <p>For any query, request or complaint relating to the processing of your personal data, you can reach us through any of the following channels:</p>
             <ul class="legal-list">
-              <li><strong>Correo electrónico:</strong> <a href="mailto:privacidad@naturahome.es">privacidad@naturahome.es</a></li>
-              <li><strong>Correo postal:</strong> Natura Home, S.L. — Dpto. Privacidad, Calle del Pinar 14, 28006 Madrid</li>
-              <li><strong>Teléfono:</strong> +34 900 123 456 (Lun–Vie, 9h–19h)</li>
+              <li><strong>Email:</strong> <a href="mailto:privacy@naturahome.es">privacy@naturahome.es</a></li>
+              <li><strong>Post:</strong> Natura Home, S.L. — Data Privacy Dept., Calle del Pinar 14, 28006 Madrid, Spain</li>
+              <li><strong>Phone:</strong> +34 900 123 456 (Mon–Fri, 9am–7pm)</li>
             </ul>
-            <p>Si no quedas satisfecho con nuestra respuesta, tienes derecho a presentar una reclamación ante la autoridad de control competente:</p>
+            <p>If you are not satisfied with our response, you have the right to lodge a complaint with the competent supervisory authority:</p>
             <div class="info-box">
-              <p><strong>Agencia Española de Protección de Datos (AEPD)</strong><br>
-              C/ Jorge Juan 6, 28001 Madrid · <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a> · Teléfono: 901 100 099</p>
+              <p><strong>Spanish Data Protection Agency (AEPD)</strong><br>
+              C/ Jorge Juan 6, 28001 Madrid · <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a> · Phone: 901 100 099</p>
             </div>
           </div>
 
@@ -745,16 +578,16 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="site-footer" aria-label="Pie de página">
+  <footer class="site-footer" aria-label="Footer">
     <div class="container">
       <div class="footer-grid">
 
         <div class="footer-brand">
           <a href="index.html" class="logo">
             <span class="logo-name">Natura Home</span>
-            <span class="logo-tagline">Muebles con alma</span>
+            <span class="logo-tagline">Furniture with soul</span>
           </a>
-          <p class="footer-brand-desc">Tienda de muebles artesanales y de diseño. Seleccionamos cada pieza para que encuentres el equilibrio entre belleza, calidad y funcionalidad.</p>
+          <p class="footer-brand-desc">A store for artisan and designer furniture. We handpick every piece so you can find the perfect balance between beauty, quality and functionality.</p>
           <div class="footer-social">
             <a href="#" aria-label="Instagram">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
@@ -769,28 +602,28 @@
         </div>
 
         <div>
-          <p class="footer-col-title">Tienda</p>
+          <p class="footer-col-title">Shop</p>
           <nav class="footer-links">
-            <a href="index.html">Inicio</a>
-            <a href="hogar.html">Hogar</a>
-            <a href="bano.html">Baño</a>
-            <a href="terraza-jardin.html">Terraza y jardín</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="index.html">Home</a>
+            <a href="hogar.html">Living</a>
+            <a href="bano.html">Bathroom</a>
+            <a href="terraza-jardin.html">Terrace &amp; Garden</a>
+            <a href="contacto.html">Contact</a>
           </nav>
         </div>
 
         <div>
-          <p class="footer-col-title">Ayuda</p>
+          <p class="footer-col-title">Help</p>
           <nav class="footer-links">
-            <a href="#">Envíos y plazos</a>
-            <a href="#">Devoluciones</a>
-            <a href="#">Garantía</a>
-            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Shipping &amp; delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">Warranty</a>
+            <a href="#">FAQ</a>
           </nav>
         </div>
 
         <div>
-          <p class="footer-col-title">Contacto</p>
+          <p class="footer-col-title">Contact</p>
           <div class="footer-contact-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             <span>hola@naturahome.es</span>
@@ -801,17 +634,17 @@
           </div>
           <div class="footer-contact-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>Lun–Vie · 9h – 19h</span>
+            <span>Mon–Fri · 9am – 7pm</span>
           </div>
         </div>
 
       </div>
       <div class="footer-bottom">
-        <span>© 2025 Natura Home · Todos los derechos reservados</span>
+        <span>© 2025 Natura Home · All rights reserved</span>
         <span>
-          <a href="politica-privacidad.html" style="color:inherit;text-decoration:underline">Aviso legal</a>
+          <a href="politica-privacidad.html" style="color:inherit;text-decoration:underline">Legal notice</a>
           &nbsp;·&nbsp;
-          <a href="politica-privacidad.html" style="color:inherit;text-decoration:underline">Privacidad</a>
+          <a href="politica-privacidad.html" style="color:inherit;text-decoration:underline">Privacy policy</a>
         </span>
       </div>
     </div>
